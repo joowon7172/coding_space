@@ -39,6 +39,11 @@ class Flyable:
 
 ## 다중 상속은 클래스를 콤마로 구분해주면 됨
 
+##### 중요 #####
+## FlyableAttackUnit 클래스는 AttackUnit 클래스에 상속되어있는 Unit 클래스까지 상속하는 것이다
+## 그래서 Unit클래스의 매개변수에 변경이 생기면 여기까지 영향이 온다.
+################
+
 # 공중 공격 유닛 클래스
 class FlyableAttackUnit(AttackUnit, Flyable):
     def __init__(self, name, hp, damage, flying_speed):

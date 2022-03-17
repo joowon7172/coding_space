@@ -17,7 +17,7 @@ class AttackUnit(Unit): #Unit클래스 상속받음
     
     def __init__(self, name, hp, damage):
 
-        Unit.__init__(self, name, hp) ## 상속할 클래스의 생성자를 상속받을 클래스 내에서 호출해준다.
+        Unit.__init__(self, name, hp) ## 상속할 클래스(Unit)의 생성자를 상속받는 클래스 내에서 호출해준다.
 
         self.damage = damage
 
